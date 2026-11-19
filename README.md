@@ -1,1 +1,1 @@
-# Mini-Pipeline-de-Analisis-de-Texto-y-Estad-sticas-NLP-Basico-
+# Mini Pipeline de Analisis de Texto y Estadisticas
