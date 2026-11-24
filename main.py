@@ -1,6 +1,6 @@
-from archivos import texto
-from Estadistica_Basica import analizar_estadisticas
-from UI import abrir_ventana
+from analizador.archivos import texto
+from analizador.estadisticas import analizar_estadisticas
+from analizador.interfaz import abrir_ventana
 
 def main():
     resultados = analizar_estadisticas(texto())

@@ -1,7 +1,6 @@
 """Estadisticas Basicas y Estructurales: Conteo total de palabras, conteo de caracteres,
 conteo total de oraciones, longitud promedio de palabras y de oraciones.
 """
-from archivos import texto
 
 def limpiar_palabra(palabra):
     puntuacion = ".,;:!?¡¿()[]{}\"'"
@@ -67,9 +66,3 @@ def analizar_estadisticas(texto):
         "Longitud promedio de palabras": round(longitud_promedio_palabras(texto), 2),
         "Longitud promedio de oraciones": round(longitud_promedio_oraciones(texto), 2)
     }
-
-##prueba de salida de texto 
-resultados = analizar_estadisticas(texto())
-for nombre, valor in resultados.items():
-    print(nombre, ":", valor)
-    

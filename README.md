@@ -39,26 +39,23 @@ El proyecto utiliza una arquitectura modular e incorpora una interfaz gráfica c
 ```text
 proyecto_py/
 ├── main.py
-├── estadisticas.py
-├── nlp.py
-├── sentimientos.py
-├── archivos.py
-├── interfaz.py
-├── requirements.txt
-└── README.md
+├── README.md
+├── analizador/
+│   ├── __init__.py
+│   ├── archivos.py
+│   ├── estadisticas.py
+│   ├── interfaz.py
+│   ├── nlp.py
+│   └── sentimientos.py
+└── empaquetado/
+    └── AnalizadorNLP.spec
 ```
 
 Cada módulo tiene una responsabilidad específica. `main.py` es el punto de entrada y debe contener un máximo de 20 líneas.
 
 ## Instalación y ejecución
 
-**1. Instalar dependencias:**
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-**2. Ejecutar el programa:**
+Desde la raíz del proyecto, ejecuta el programa con Python 3 y Tkinter.
 
 ```bash
 python main.py
@@ -68,7 +65,7 @@ python main.py
 
 ```bash
 python -m pip install pyinstaller
-python -m PyInstaller --onefile --windowed --name AnalizadorNLP main.py
+python -m PyInstaller empaquetado/AnalizadorNLP.spec
 ```
 
 El ejecutable se genera en `dist/AnalizadorNLP.exe`.
